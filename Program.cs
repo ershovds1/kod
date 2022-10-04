@@ -1,9 +1,18 @@
-﻿//Программа, которая принимает на вход три числа и выдаёт максимальное из этих чисел
-
-int a, b, c;
-Console.WriteLine("Введите три числа : ");
+﻿//программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N
+int a, i;
+i = 1;
+Console.WriteLine("Введите число : ");
 a = Convert.ToInt32(Console.ReadLine());
-b = Convert.ToInt32(Console.ReadLine());
-c = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Максимальное число");
-Console.WriteLine(Math.Max(a, Math.Max(b, c)));
+if (i == 1)
+{
+    i += 1;
+}
+
+Console.WriteLine("Все четные числа");
+while (i <= a)
+{
+    Console.WriteLine(i);
+    i += 2;
+}
+
+
