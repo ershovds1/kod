@@ -1,16 +1,9 @@
-﻿//Программа, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+﻿//Программа, которая принимает на вход три числа и выдаёт максимальное из этих чисел
 
-int a, b;
-Console.WriteLine("Введите два числа : ");
+int a, b, c;
+Console.WriteLine("Введите три числа : ");
 a = Convert.ToInt32(Console.ReadLine());
 b = Convert.ToInt32(Console.ReadLine());
-if (a > b)
-{
-    Console.WriteLine("{0} наибольшее число", a);
-    Console.WriteLine("{0} наименьшее число", b);
-}
-else
-{
-    Console.WriteLine("{0} наибольшее число ", b);
-    Console.WriteLine("{0} наименьшее число ", a);
-}
+c = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Максимальное число");
+Console.WriteLine(Math.Max(a, Math.Max(b, c)));
