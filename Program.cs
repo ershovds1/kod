@@ -22,3 +22,15 @@ int Num(int a)
     }
     return index;
 }
+
+//Вывод суммы цифр в числе
+void Sum(int n, int len)
+{
+    int sum = 0;
+    for (int i = 1; i <= len; i++)
+    {
+        sum += n % 10;
+        n /= 10;
+    }
+    Console.WriteLine(sum);
+}
