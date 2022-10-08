@@ -1,2 +1,22 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+// Напишите функцию, используя цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+
+int numberA = ReadInt("Введите число A: ");
+int numberB = ReadInt("Введите число B: ");
+Stepen(numberA, numberB);
+
+
+void Stepen(int a, int b)
+{
+    int result = 1;
+    for (int i = 1; i <= b; i++)
+    {
+        result = result * a;
+    }
+    Console.WriteLine(result);
+}
+
+int ReadInt(string message)
+{
+    Console.WriteLine(message);
+    return Convert.ToInt32(Console.ReadLine());
+}
