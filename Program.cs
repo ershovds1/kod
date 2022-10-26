@@ -53,4 +53,6 @@ string[] arr1 = {"Hello", "2", "world", ":-)"};
             Console.WriteLine();
         }
         
-   
+       PrintTask(arr1);
+        PrintTask(arr2);
+        PrintTask(arr3);
